@@ -3,4 +3,10 @@ if SHIELD_FLOW
 config ZMK_KEYBOARD_NAME
     default "Flow"
 
+config ZMK_BLE
+    def_bool y
+
+config SETTINGS
+    def_bool n
+
 endif

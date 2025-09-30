@@ -6,7 +6,4 @@ config ZMK_KEYBOARD_NAME
 config ZMK_BLE
     def_bool y
 
-config SETTINGS
-    def_bool n
-
 endif

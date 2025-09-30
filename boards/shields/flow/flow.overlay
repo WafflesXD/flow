@@ -1,11 +1,9 @@
 #include <dt-bindings/zmk/matrix_transform.h>
+#include <physical_layouts.dtsi>
 
 / {
-  chosen {
-    zmk,physical-layout = &right_layout;
-  };
-
-  right_scan: kscan0 {
+  
+  right_scan: kscan_0 {
     compatible = "zmk,kscan-gpio-matrix";
     diode-direction = "col2row";
     wakeup-source;
@@ -24,7 +22,7 @@
       <&xiao_d 4 GPIO_ACTIVE_HIGH>;
   };
 
-  right_transform: keymap_transform0 {
+  right_transform: keymap_transform_0 {
     compatible = "zmk,matrix-transform";
     columns = <5>;
     rows = <4>;
@@ -43,4 +41,9 @@
     kscan = <&right_scan>;
     transform = <&right_transform>;
   };
+
+  chosen {
+    zmk,physical-layout = &right_layout;
+  };
+
 };

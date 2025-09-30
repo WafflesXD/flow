@@ -32,13 +32,10 @@
     compatible = "zmk,kscan-gpio-matrix";
     diode-direction = "col2row";
     wakeup-source;
-    debounce-press-ms = <5>;      // Wait 5ms to confirm key press
-    debounce-release-ms = <5>;    // Wait 5ms to confirm key release
-    debounce-scan-period-ms = <1>; // Scan every 1ms when keys are activev
 
     row-gpios =
+      <&xiao_d 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>, 
       <&xiao_d 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>, 
-      <&xiao_d 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>, 
       <&xiao_d 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>, 
       <&xiao_d 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>; 
 

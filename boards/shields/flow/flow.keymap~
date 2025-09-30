@@ -1,0 +1,17 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+
+/ {
+  keymap {
+    compatible = "zmk,keymap";
+
+    colemak {
+      bindings = <
+        &kp a &kp b &kp c &kp d 
+        &kp e &kp f &kp g &kp h &kp i &kp j
+        &kp k &kp l &kp m &kp n &kp o
+        &kp p &kp q &kp r 
+      >;
+    };
+  };
+};

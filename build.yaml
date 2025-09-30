@@ -20,4 +20,3 @@
 include:
   - board: xiao_ble
     shield: flow
-    snippet: zmk-usb-logging

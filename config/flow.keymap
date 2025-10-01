@@ -9,10 +9,10 @@
 
         colemak {
             bindings = <
-&kp N7  &kp N8        &kp N9        &bt BT_CLR    &trans
-&kp N4  &kp N5        &kp NUMBER_6  &bt BT_SEL 1  &out OUT_TOG
-&kp N1  &kp NUMBER_2  &kp NUMBER_3  &bt BT_SEL 2  &bt BT_SEL 3
-&trans  &kp DELETE    &trans
+&bt BT_SEL 1    &kp N7         &kp N8        &kp N9        &trans
+&bt BT_SEL 0    &kp N4         &kp N5        &kp N6        &out OUT_TOG
+&bt BT_CLR_ALL  &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3  &bt BT_SEL 3
+&kp ENTER       &kp BACKSPACE  &kp LC(N0)
             >;
         };
     };
